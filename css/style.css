@@ -119,9 +119,7 @@ body span {
 }
 
 @media only screen and (max-width: 768px) {
-    .center-section {
-        height: 70%;
-    }
+ 
 
     .center-section .quote {
         display: flex;
@@ -141,6 +139,32 @@ body span {
 
 
 }
+@media only screen and (max-width: 425px){
+    .quote p{
+        font-size: 13px;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    .quote p{
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .quote p{
+        font-size: 8px;
+    }
+    .quote-heading h3 {
+        
+        font-size: 1rem;
+    }
+    
+
+
+}
+
+
 
 .quote-heading h3 {
     font-family: "Sofia";
@@ -150,8 +174,8 @@ body span {
 
 .fab {
     border-radius: 50%;
-    height: 56px;
-    width: 56px;
+    height: 80px;
+    width: 80px;
     border: 1px dotted purple;
     display: flex;
     justify-content: center;
@@ -161,7 +185,7 @@ body span {
     background-color: white;
     right: 10px;
     bottom: 80px;
-
+    font-size: 80px;
 }
 
 footer {

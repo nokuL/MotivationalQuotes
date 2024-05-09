@@ -1,45 +1,55 @@
-.navigation{
+html,
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.navigation {
     display: flex;
-    background-color: white;  
-    height: 2rem;
+    background-color: white;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 2;
     width: 100%;
     height: 50px;
 }
-.logo{
-display: flex;
-flex-grow: 3;
-justify-content: flex-start;
-align-items: center;
+
+.logo {
+    display: flex;
+    flex-grow: 3;
+    justify-content: flex-start;
+    align-items: center;
 
 }
-.logo-img{
+
+.logo-img {
     height: 80px;
     width: 80px;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-grow: 2;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
     padding-right: 2rem
-
 }
 
-.menu a{
+.menu a {
     color: maroon;
     font-size: 1.5rem;
     font-family: "Sofia";
     font-style: italic;
+    font-weight: bold;
 }
-body{
+
+.hero {
     display: flex;
     flex-direction: column;
     background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwODUtMDc2YS1rdnZ1ZjRqaC5qcGc.jpg");
@@ -49,12 +59,11 @@ body{
     background-position: center;
     justify-content: center;
     align-items: center;
-    height: 1000px;
-    width: 100%;
-    
+    height: calc(100vh - 50px);
+
 }
 
-.center-section{
+.center-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,22 +73,29 @@ body{
     border-radius: 15px;
     box-shadow: 10px 5px 10px maroon;
     padding: 2rem;
-    width:50%;
-    gap:0.25rem;
-    
+    width: 50%;
+    gap: 0.25rem;
+    opacity: 0.8;
+
+
+
+
 }
-@media only screen and (max-width:425px){
-    .center-section{
+
+@media only screen and (max-width:425px) {
+    .center-section {
         width: 70%;
         height: 30%;
         padding: 2rem;
     }
-    .menu a{
+
+    .menu a {
         font-size: 0.75rem;
     }
 
 }
-.center-section button{
+
+.center-section button {
     background-color: maroon;
     color: white;
     border-radius: 15px;
@@ -88,12 +104,13 @@ body{
     width: 200px;
 
 }
-body span{
+
+body span {
     color: maroon;
     font-weight: bold;
 }
 
-.center-section .quote{
+.center-section .quote {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -101,32 +118,52 @@ body span{
     align-items: flex-start;
 }
 
-@media only screen and (max-width: 768px){
-    .center-section{
+@media only screen and (max-width: 768px) {
+    .center-section {
         height: 70%;
     }
-    .center-section .quote{
+
+    .center-section .quote {
         display: flex;
         width: 90%;
         justify-content: center;
     }
-    .center-section button{
-        background-color:maroon;
+
+    .center-section button {
+        background-color: maroon;
         color: white;
         border-radius: 15px;
         font-size: 1.5rem;
         padding: 0.5rem;
         width: 200px;
-    
+
     }
-  
+
 
 }
-.quote-heading h3{
+
+.quote-heading h3 {
     font-family: "Sofia";
     color: maroon;
     font-size: 2rem;
 }
 
+.fab {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    border: 1px dotted purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    z-index: 2;
+    background-color: white;
+    right: 10px;
+    bottom: 80px;
 
+}
 
+footer {
+    background-color: white;
+}
